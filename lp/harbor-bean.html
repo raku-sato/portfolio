@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbor Bean | 佐世保の港町の自家焙煎カフェ（架空店舗のサンプルLP）</title>
+<meta name="description" content="佐世保の架空カフェ「Harbor Bean」の集客LPサンプルです。毎朝焙煎するコーヒーと、海が見える窓際カウンター。">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --navy:#12263a;--navy-deep:#0b1a29;--cream:#f6ecdd;--foam:#fcf7ef;--kraft:#e7d5ba;
+  --copper:#bb5f30;--copper-light:#e9a26d;--ink:#2a2622;--muted:#6c6157;--line:#d8c6ab;
+  --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",Meiryo,"Noto Sans JP",sans-serif;
+  --latin:Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.9;font-size:16px;overflow-x:hidden}
+svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--copper-light);outline-offset:3px}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+section{padding:clamp(72px,10vw,120px) 0}
+.eyebrow{font-family:var(--latin);font-style:italic;color:var(--copper);font-size:17px;letter-spacing:.04em}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,4.4vw,42px);line-height:1.45;letter-spacing:.04em;text-wrap:balance}
+h3{text-wrap:balance}
+.craft-intro h2{font-size:clamp(28px,3vw,34px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:2px;font-weight:600;text-decoration:none;letter-spacing:.05em;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-copper:hover{background:#a65227}
+.btn-line{border:1px solid rgba(255,255,255,.65);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* First view */
+.fv{position:relative;min-height:min(100svh,900px);padding:0;color:#fff;background:var(--navy-deep);display:flex;flex-direction:column;overflow:hidden}
+.fv-scene{position:absolute;inset:0;width:100%;height:100%;max-width:none}
+.topbar{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:18px 24px}
+.logo{font-family:var(--latin);font-size:22px;letter-spacing:.03em;text-decoration:none}
+.topbar nav{display:flex;gap:26px;font-size:14px}
+.topbar nav a{text-decoration:none;opacity:.88}
+.topbar nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.fv-head{position:relative;z-index:2;flex:1;display:flex;justify-content:center;padding-top:clamp(8px,2vh,24px)}
+.fv h1{writing-mode:vertical-rl;font-family:var(--serif);font-weight:500;font-size:clamp(42px,4.6vw,58px);line-height:1.5;letter-spacing:.08em;text-shadow:0 2px 24px rgba(8,18,30,.55);height:fit-content}
+.fv h1 span{display:block}
+.fv h1 span+span{margin-top:.9em}
+.fv-foot{position:relative;z-index:2;text-align:center;padding:0 20px 62px}
+.fv-foot p{font-size:clamp(14px,1.5vw,17px);margin-bottom:18px;line-height:1.8;text-wrap:balance}
+.fv-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.fv-cta .btn{min-width:164px}
+
+/* Craft */
+.craft-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,80px)}
+.craft-intro{position:sticky;top:40px;align-self:start}
+.craft-intro p:last-child{margin-top:20px;color:var(--muted)}
+.craft-item{display:grid;grid-template-columns:76px 1fr;gap:22px;padding:30px 0;border-top:1px solid var(--line)}
+.craft-item:last-child{border-bottom:1px solid var(--line)}
+.craft-item svg{width:76px;height:76px}
+.craft-item h3{font-family:var(--serif);font-size:21px;font-weight:600;letter-spacing:.03em;line-height:1.6;margin-bottom:6px}
+.craft-item p{font-size:15.5px;color:#4b433b}
+
+/* Menu */
+.menu{background:var(--navy);color:var(--foam)}
+.menu .eyebrow{color:var(--copper-light)}
+.menu-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:42px}
+.menu-head small{color:#b9c4cd;font-size:13.5px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:58px}
+.feature{background:var(--foam);color:var(--ink);padding-bottom:22px}
+.feature .art{aspect-ratio:4/3;width:100%}
+.feature h3{font-family:var(--serif);font-size:19px;font-weight:600;padding:16px 20px 0;line-height:1.5}
+.feature p{font-size:14px;color:var(--muted);padding:6px 20px 0;line-height:1.75}
+.feature strong{display:block;padding:8px 20px 0;font-family:var(--latin);font-size:19px;color:var(--copper);font-weight:400}
+.price-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px clamp(32px,6vw,72px)}
+.price-cols h3{font-family:var(--serif);font-weight:500;font-size:20px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.3);margin-bottom:8px}
+.price-cols ul{list-style:none;padding:0}
+.price-cols li{display:flex;align-items:baseline;gap:10px;padding:7px 0;font-size:15.5px}
+.price-cols li i{flex:1;border-bottom:1px dotted rgba(255,255,255,.4);transform:translateY(-4px)}
+.price-cols li b{font-family:var(--latin);font-weight:400}
+
+/* Interior */
+.space-head{margin-bottom:36px}
+.space-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:14px}
+.space-grid figure{position:relative;overflow:hidden;background:var(--kraft)}
+.space-grid figure:first-child{grid-row:span 2}
+.space-grid svg{width:100%;height:100%}
+.space-grid figcaption{position:absolute;left:0;bottom:0;background:rgba(11,26,41,.82);color:#fff;font-size:13px;padding:5px 12px;letter-spacing:.04em}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* Voice */
+.voice{background:var(--kraft)}
+.sample-tag{display:inline-block;background:var(--navy);color:#fff;font-size:13px;padding:0 10px;line-height:26px;font-family:var(--sans);font-weight:600;letter-spacing:.04em;vertical-align:middle}
+.voice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.voice-card{background:var(--foam);padding:26px 24px;display:flex;flex-direction:column;gap:14px}
+.voice-card p{font-family:var(--serif);font-size:16.5px;line-height:1.95}
+.voice-card footer{margin-top:auto;font-size:13px;color:var(--muted)}
+
+/* Access */
+.access-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,60px);align-items:center;margin-top:32px}
+.map{border:1px solid var(--line)}
+.access dl{display:grid;grid-template-columns:5.5em 1fr;font-size:15px}
+.access dt,.access dd{padding:11px 0;border-top:1px solid var(--line)}
+.access dt{font-weight:600}
+.access dd{margin:0}
+
+/* Instagram */
+.insta{background:linear-gradient(135deg,#7c3a23 0%,#bb5f30 52%,#e29b63 100%);color:#fff}
+.insta-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.insta .eyebrow{color:#ffe2c6}
+.insta p.lead{margin:18px 0 26px}
+.insta .btn{background:#fff;color:#7c3a23}
+.insta .btn:hover{background:var(--foam)}
+.handle{display:block;margin-top:14px;font-family:var(--latin);font-size:15px;opacity:.92}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:10px;background:rgba(255,255,255,.14)}
+.tile{aspect-ratio:1;display:grid;place-items:center}
+.tile svg{width:62%;height:62%}
+.t1{background:linear-gradient(160deg,#17324a,#315a74)}
+.t2{background:linear-gradient(160deg,#fcf7ef,#ecd9bd)}
+.t3{background:linear-gradient(180deg,#27425c,#d9774b)}
+.t4{background:linear-gradient(160deg,#ecd9bd,#c99a6d)}
+.t5{background:linear-gradient(160deg,#0f2233,#17324a)}
+.t6{background:linear-gradient(180deg,#f7d3ad,#7fb0b7)}
+
+footer.site{background:var(--navy-deep);color:#c4ccd3;padding:34px 0 34px;font-size:13px;text-align:center;line-height:1.9}
+footer.site b{display:block;font-family:var(--latin);font-weight:400;font-size:20px;color:#fff;margin-bottom:6px}
+
+/* Mobile bar + sample notice */
+.mbar{display:none}
+.sample-modal{display:none;position:fixed;inset:0;z-index:20;background:rgba(8,18,30,.72);place-items:center;padding:20px}
+.sample-modal:target{display:grid}
+.sample-box{background:var(--foam);max-width:420px;padding:30px 28px;text-align:center}
+.sample-box h3{font-family:var(--serif);font-size:20px;margin-bottom:8px}
+.sample-box p{font-size:14.5px;margin-bottom:18px}
+
+@media (max-width:760px){
+  body{padding-bottom:58px}
+  .topbar nav{display:none}
+  .fv{min-height:calc(100svh - 58px)}
+  .fv-foot{padding-bottom:50px}
+  .fv-cta .btn{min-width:0;flex:1 1 130px;padding:0 12px}
+  .craft-grid,.access-grid,.insta-grid{grid-template-columns:minmax(0,1fr)}
+  .craft-intro{position:static}
+  .craft-item{grid-template-columns:60px 1fr;gap:16px}
+  .craft-item svg{width:60px;height:60px}
+  .feature-grid,.voice-grid,.price-cols{grid-template-columns:minmax(0,1fr)}
+  .feature-grid{gap:14px}
+  .space-grid{grid-template-columns:minmax(0,1fr)}
+  .space-grid figure:first-child{grid-row:auto}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;height:58px;background:var(--navy-deep);color:#fff;font-size:14.5px;font-weight:600}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}
+  .mbar a+a{background:var(--copper)}
+  .mbar svg{width:19px;height:19px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<!-- 共有アイコン -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 7.5h3.5L9 5h6l1.5 2.5H20a1 1 0 0 1 1 1V19a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8.5a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="s-bean" viewBox="0 0 64 64"><ellipse cx="32" cy="32" rx="19" ry="26" transform="rotate(28 32 32)" fill="#6b3a22"/><path d="M45 11C31 22 39 37 20 53" fill="none" stroke="#2e1a10" stroke-width="3.500" stroke-linecap="round"/></symbol>
+  <symbol id="s-latte" viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#fcf7ef"/><circle cx="32" cy="32" r="23" fill="#9a6238"/><path d="M32 48C20 40 18 30 22 24c3 4 5 5 10 5s7-1 10-5c4 6 2 16-10 24Z" fill="#f4e6d2"/><path d="M32 42c-6-4-8-9-6-12 2 2 3 3 6 3s4-1 6-3c2 3 0 8-6 12Z" fill="#9a6238"/><path d="M32 15v13" stroke="#f4e6d2" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="s-waves" viewBox="0 0 64 64"><g fill="none" stroke="#bcd8df" stroke-width="3.500" stroke-linecap="round"><path d="M6 22c6-7 12-7 18 0s12 7 18 0 12-7 18 0"/><path d="M6 34c6-7 12-7 18 0s12 7 18 0 12-7 18 0"/><path d="M6 46c6-7 12-7 18 0s12 7 18 0 12-7 18 0"/></g></symbol>
+  <symbol id="s-sun" viewBox="0 0 64 64"><circle cx="32" cy="32" r="17" fill="#ffd9a8"/><path d="M4 42h56M12 50h40M21 58h22" stroke="#12263a" stroke-width="3.500" stroke-linecap="round"/></symbol>
+  <symbol id="s-cup" viewBox="0 0 64 64"><path d="M12 24h34v16a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14Z" fill="#fcf7ef"/><path d="M46 28h4a7 7 0 0 1 0 14h-5" fill="none" stroke="#fcf7ef" stroke-width="4"/><g fill="none" stroke="#e9a26d" stroke-width="3" stroke-linecap="round"><path d="M22 18c-3-4 3-6 0-11"/><path d="M34 18c-3-4 3-6 0-11"/></g></symbol>
+  <symbol id="s-boat" viewBox="0 0 64 64"><path d="M8 40h48l-7 12H16Z" fill="#12263a"/><path d="M30 12v28H14Z" fill="#fcf7ef"/><path d="M34 18v22h13Z" fill="#bb5f30"/><path d="M4 57c5-4 9-4 14 0s9 4 14 0 9-4 14 0 9 4 14 0" fill="none" stroke="#fcf7ef" stroke-width="3" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="fv">
+  <svg class="fv-scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#0b1a29"/><stop offset=".55" stop-color="#1c3852"/>
+        <stop offset=".78" stop-color="#5e4c64"/><stop offset=".91" stop-color="#d97f54"/><stop offset="1" stop-color="#f5bd83"/>
+      </linearGradient>
+      <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b16a52"/><stop offset=".3" stop-color="#3a4c63"/><stop offset="1" stop-color="#12263a"/></linearGradient>
+      <radialGradient id="glow"><stop offset="0" stop-color="#ffdca9" stop-opacity=".85"/><stop offset="1" stop-color="#ffdca9" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect width="1440" height="640" fill="url(#sky)"/>
+    <circle cx="720" cy="590" r="250" fill="url(#glow)"/>
+    <circle cx="720" cy="598" r="58" fill="#ffe2b8"/>
+    <g fill="#2a3346"><path d="M0 625c70-44 150-54 230-30 44-34 118-34 168 8 30-12 58-12 88 22H0Z"/><path d="M930 625c28-30 66-40 104-22 44-44 120-46 170-8 66-24 160-16 236 16v14Z"/><path d="M566 625c10-14 30-20 50-10 10-4 24-2 32 10Z"/><path d="M806 625c8-10 22-13 34-7 10-5 22-1 28 7Z"/></g>
+    <rect y="622" width="1440" height="278" fill="url(#sea)"/>
+    <g fill="#ffe2b8"><rect x="664" y="632" width="112" height="4" rx="2" opacity=".8"/><rect x="684" y="646" width="72" height="4" rx="2" opacity=".55"/></g>
+    <g transform="translate(838 596)" fill="#14202f"><path d="M0 22h66l-10 16H9Z"/><rect x="20" y="4" width="20" height="18"/><rect x="28" y="-16" width="3" height="20"/><path d="M31-16l18 10-18 3Z"/></g>
+    <path fill="#17324a" d="M0 735c120-30 240-30 360 0s240 30 360 0 240-30 360 0 240 30 360 0v165H0Z"/>
+    <path fill="#0f2437" d="M0 790c120 26 240 26 360 0s240-26 360 0 240 26 360 0 240-26 360 0v110H0Z"/>
+    <path fill="#f6ecdd" d="M0 880c120-22 240-22 360 0s240 22 360 0 240-22 360 0 240 22 360 0v20H0Z"/>
+  </svg>
+  <div class="topbar">
+    <a class="logo" href="#">Harbor Bean</a>
+    <nav aria-label="ページ内リンク"><a href="#craft">こだわり</a><a href="#menu">メニュー</a><a href="#space">店内</a><a href="#access">アクセス</a><a href="#instagram">Instagram</a></nav>
+  </div>
+  <div class="fv-head">
+    <h1><span>港の朝は、</span><span>一杯から。</span></h1>
+  </div>
+  <div class="fv-foot">
+    <p>佐世保の港町で、毎朝焙煎するカフェ。<br>朝7時30分から、海向きの席でお待ちしています。</p>
+    <div class="fv-cta">
+      <a class="btn btn-copper" href="#menu">メニューを見る</a>
+      <a class="btn btn-line" href="#access">アクセス</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="craft">
+  <div class="wrap craft-grid">
+    <div class="craft-intro">
+      <p class="eyebrow">Our craft</p>
+      <h2>毎朝いれたい一杯を、<br>港のそばでつくる。</h2>
+      <p>通勤前の一杯にも、島めぐりの前のひと休みにも。Harbor Beanが大事にしていることは、三つだけです。</p>
+    </div>
+    <div>
+      <article class="craft-item">
+        <svg viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="38" fill="#e7d5ba"/><path d="M26 26h24l-3 9H29Z" fill="#12263a"/><circle cx="38" cy="47" r="13" fill="#bb5f30"/><circle cx="38" cy="47" r="5" fill="#fcf7ef"/><path d="M30 14c-3 4 3 6 0 10M46 14c-3 4 3 6 0 10" fill="none" stroke="#12263a" stroke-width="2.500" stroke-linecap="round"/></svg>
+        <div><h3>焙煎は、その日に出す分だけ</h3><p>店内の小さな焙煎機で毎朝少しずつ。香りの立つうちにお出しします。</p></div>
+      </article>
+      <article class="craft-item">
+        <svg viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="38" fill="#e7d5ba"/><ellipse cx="29" cy="38" rx="9" ry="14" transform="rotate(24 29 38)" fill="#6b3a22"/><ellipse cx="48" cy="38" rx="9" ry="14" transform="rotate(24 48 38)" fill="#12263a"/><path d="M35 26c-7 8-1 15-11 24M54 26c-7 8-1 15-11 24" fill="none" stroke="#e7d5ba" stroke-width="2" stroke-linecap="round"/></svg>
+        <div><h3>豆は、産地を明かせるものを</h3><p>生産者と産地がわかる豆だけを仕入れ、どこの豆かをレジ横の黒板に書いています。</p></div>
+      </article>
+      <article class="craft-item">
+        <svg viewBox="0 0 76 76" aria-hidden="true"><circle cx="38" cy="38" r="38" fill="#e7d5ba"/><rect x="18" y="18" width="40" height="40" fill="#fcf7ef"/><path d="M18 42h40v16H18Z" fill="#315a74"/><circle cx="38" cy="42" r="8" fill="#e9a26d"/><path d="M18 42h40v16H18Z" fill="#315a74" opacity=".75"/><path d="M38 18v40M18 38h40" stroke="#12263a" stroke-width="2.500"/><rect x="18" y="18" width="40" height="40" fill="none" stroke="#12263a" stroke-width="2.500"/></svg>
+        <div><h3>特等席は、海向きのカウンター</h3><p>窓際の8席は、すべて海向き。船の行き来をながめながら、ゆっくり過ごせます。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <div><p class="eyebrow">Menu</p><h2>まず頼んでほしい、三品。</h2></div>
+      <small>価格はすべて税込です</small>
+    </div>
+    <div class="feature-grid">
+      <article class="feature">
+        <svg class="art" viewBox="0 0 400 300" aria-hidden="true"><rect width="400" height="300" fill="#e7d5ba"/><circle cx="200" cy="150" r="118" fill="#d0b692"/><use href="#s-latte" x="96" y="46" width="208" height="208"/></svg>
+        <h3>港の朝ブレンド ラテ</h3><p>深めに焼いた看板ブレンドを、たっぷりのミルクで。</p><strong>¥620</strong>
+      </article>
+      <article class="feature">
+        <svg class="art" viewBox="0 0 400 300" aria-hidden="true"><rect width="400" height="300" fill="#315a74"/><ellipse cx="200" cy="222" rx="150" ry="28" fill="#fcf7ef"/><path d="M110 104c0-26 40-30 90-30s90 4 90 30c0 16-10 22-10 30v76c0 8-6 12-12 12H132c-6 0-12-4-12-12v-76c0-8-10-14-10-30Z" fill="#d89a58"/><path d="M122 110c0-20 34-24 78-24s78 4 78 24c0 14-9 18-9 26v66c0 6-3 8-8 8H139c-5 0-8-2-8-8v-66c0-8-9-12-9-26Z" fill="#f7e2ae"/><path d="M160 150c20-18 62-18 82 0-20 10-62 10-82 0Z" fill="#fff6d8"/><circle cx="201" cy="150" r="11" fill="#f0a93b"/></svg>
+        <h3>厚切り卵トースト</h3><p>朝いちばんに売り切れる、半熟卵ののった朝食の定番。</p><strong>¥680</strong>
+      </article>
+      <article class="feature">
+        <svg class="art" viewBox="0 0 400 300" aria-hidden="true"><rect width="400" height="300" fill="#b95f31"/><ellipse cx="200" cy="234" rx="136" ry="22" fill="#fcf7ef"/><path d="M144 104h112l22 112c1 10-6 16-14 16H136c-8 0-15-6-14-16Z" fill="#f4d58c"/><path d="M144 104h112l7 34c-14 12-24-4-36 8s-22 10-34-2-24 6-38-6Z" fill="#6b3213"/><path d="M152 96h96" stroke="#6b3213" stroke-width="16" stroke-linecap="round"/></svg>
+        <h3>潮風の塩プリン</h3><p>ほろ苦いカラメルに、ひとつまみの塩がきいた固めのプリン。</p><strong>¥520</strong>
+      </article>
+    </div>
+    <div class="price-cols">
+      <div>
+        <h3>コーヒー</h3>
+        <ul>
+          <li>本日のドリップ<i></i><b>¥480</b></li>
+          <li>エスプレッソ<i></i><b>¥420</b></li>
+          <li>カフェラテ<i></i><b>¥560</b></li>
+          <li>水出しアイスコーヒー<i></i><b>¥520</b></li>
+        </ul>
+      </div>
+      <div>
+        <h3>フード・甘いもの</h3>
+        <ul>
+          <li>チーズトースト<i></i><b>¥580</b></li>
+          <li>ハムとピクルスのサンド<i></i><b>¥780</b></li>
+          <li>バナナブレッド<i></i><b>¥450</b></li>
+          <li>焼きたてスコーン<i></i><b>¥420</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="space">
+  <div class="wrap">
+    <div class="space-head"><p class="eyebrow">The space</p><h2>長居したくなる、海向きの席。</h2></div>
+    <div class="space-grid">
+      <figure>
+        <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="海が見える大きな窓とカウンター席のイラスト">
+          <defs>
+            <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9cbd4"/><stop offset=".55" stop-color="#fbdcb9"/></linearGradient>
+            <radialGradient id="lamp"><stop offset="0" stop-color="#ffdca9" stop-opacity=".75"/><stop offset="1" stop-color="#ffdca9" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect width="800" height="600" fill="#efe2ce"/>
+          <rect x="90" y="70" width="620" height="280" fill="url(#win)"/>
+          <circle cx="430" cy="232" r="38" fill="#fff0d2"/>
+          <path fill="#7f9eaa" d="M90 250c50-30 100-34 140-14 32-22 78-20 110 14ZM520 250c30-24 70-26 100-10 34-12 66-8 90 10Z"/>
+          <rect x="90" y="248" width="620" height="102" fill="#47788a"/>
+          <g fill="#fff0d2" opacity=".65"><rect x="390" y="262" width="80" height="4"/><rect x="408" y="278" width="44" height="4"/></g>
+          <path d="M297 70v280M503 70v280" stroke="#3a2b20" stroke-width="10"/>
+          <rect x="90" y="70" width="620" height="280" fill="none" stroke="#3a2b20" stroke-width="12"/>
+          <rect x="52" y="350" width="696" height="26" fill="#8a5730"/><rect x="52" y="376" width="696" height="10" fill="#5e3a20"/>
+          <rect x="0" y="386" width="800" height="214" fill="#d9c5a7"/><rect x="0" y="540" width="800" height="60" fill="#a88f6e"/>
+          <g fill="none" stroke="#3a2b20" stroke-width="7"><path d="M170 442l-16 104M210 442l16 104"/><path d="M390 442l-16 104M430 442l16 104"/><path d="M610 442l-16 104M650 442l16 104"/></g>
+          <g fill="#12263a"><rect x="148" y="428" width="84" height="18" rx="9"/><rect x="368" y="428" width="84" height="18" rx="9"/><rect x="588" y="428" width="84" height="18" rx="9"/></g>
+          <g><circle cx="190" cy="168" r="82" fill="url(#lamp)"/><circle cx="410" cy="168" r="82" fill="url(#lamp)"/><circle cx="630" cy="168" r="82" fill="url(#lamp)"/></g>
+          <g stroke="#2a2622" stroke-width="3"><path d="M190 0v124M410 0v124M630 0v124"/></g>
+          <g fill="#bb5f30"><path d="M162 156c0-20 13-34 28-34s28 14 28 34Z"/><path d="M382 156c0-20 13-34 28-34s28 14 28 34Z"/><path d="M602 156c0-20 13-34 28-34s28 14 28 34Z"/></g>
+          <g fill="#fcf7ef"><path d="M190 326h34v12a12 12 0 0 1-12 12h-10a12 12 0 0 1-12-12ZM570 326h34v12a12 12 0 0 1-12 12h-10a12 12 0 0 1-12-12Z"/></g>
+          <g transform="translate(722 270)"><path d="M-22 44h44l-6 36h-32Z" fill="#bb5f30"/><path d="M0 46C-8 22-24 14-34 6 -20 2-4 16 0 34 2 12 14-6 30-14 30 8 14 26 0 46Z" fill="#3e6b4f"/></g>
+        </svg>
+        <figcaption>窓際カウンター</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 480 290" preserveAspectRatio="xMidYMid slice" role="img" aria-label="店内の小さな焙煎機のイラスト">
+          <rect width="480" height="290" fill="#17324a"/><rect y="240" width="480" height="50" fill="#0b1a29"/>
+          <rect x="316" y="20" width="16" height="96" fill="#8e9aa4"/><path d="M316 20h60v14h-44v-14Z" fill="#8e9aa4"/>
+          <path d="M214 56h60l-12 40h-36Z" fill="#c9d2d9"/>
+          <circle cx="244" cy="150" r="66" fill="#bb5f30"/><circle cx="244" cy="150" r="46" fill="#8c4220"/><circle cx="244" cy="150" r="16" fill="#efd8bd"/>
+          <rect x="196" y="212" width="96" height="30" fill="#0f2233"/><path d="M226 232c-7-8 3-12 0-20 11 6 18 12 14 20ZM256 232c-7-8 3-12 0-20 11 6 18 12 14 20Z" fill="#e9a26d"/>
+          <ellipse cx="96" cy="222" rx="62" ry="14" fill="#c9d2d9"/><rect x="88" y="226" width="16" height="16" fill="#c9d2d9"/>
+          <g fill="#6b3a22"><ellipse cx="76" cy="216" rx="7" ry="4"/><ellipse cx="94" cy="214" rx="7" ry="4"/><ellipse cx="112" cy="217" rx="7" ry="4"/></g>
+        </svg>
+        <figcaption>店内の小さな焙煎機</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 480 290" preserveAspectRatio="xMidYMid slice" role="img" aria-label="海沿いのテラス席のイラスト">
+          <defs><linearGradient id="ter" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fbdc6"/><stop offset=".6" stop-color="#fbd8b2"/></linearGradient></defs>
+          <rect width="480" height="290" fill="url(#ter)"/><rect y="150" width="480" height="60" fill="#47788a"/><path d="M0 150c40-20 80-22 120-6 28-14 58-12 86 6Z" fill="#7f9eaa"/>
+          <g stroke="#2a2622" stroke-width="5"><path d="M0 170h480"/><path d="M40 170v50M120 170v50M360 170v50M440 170v50"/></g>
+          <rect y="216" width="480" height="74" fill="#a88f6e"/>
+          <path d="M240 46v178" stroke="#2a2622" stroke-width="6"/><path d="M120 110c10-46 64-70 120-70s110 24 120 70c-30-14-50-14-80 0-26-14-54-14-80 0-30-14-50-14-80 0Z" fill="#bb5f30"/>
+          <ellipse cx="240" cy="210" rx="62" ry="9" fill="#fcf7ef"/><path d="M224 196h30v8a8 8 0 0 1-8 8h-14a8 8 0 0 1-8-8Z" fill="#12263a"/>
+          <g fill="#12263a"><rect x="108" y="222" width="52" height="9" rx="4"/><rect x="330" y="222" width="52" height="9" rx="4"/></g><g stroke="#12263a" stroke-width="4"><path d="M120 230l-6 40M148 230l6 40M342 230l-6 40M370 230l6 40"/></g>
+        </svg>
+        <figcaption>海風のテラス席</figcaption>
+      </figure>
+    </div>
+    <p class="note">※店内はイメージイラストです。全24席（カウンター8席・テーブル10席・テラス6席）</p>
+  </div>
+</section>
+
+<section class="voice">
+  <div class="wrap">
+    <p class="eyebrow">Voices</p>
+    <h2>お客様の声 <span class="sample-tag">※サンプル</span></h2>
+    <div class="voice-grid">
+      <article class="voice-card"><p>朝の出勤前に寄るのが日課になりました。海を見ながらの10分で、気持ちが切り替わります。</p><footer>30代・会社員（※サンプル）</footer></article>
+      <article class="voice-card"><p>旅行の最終日に立ち寄りました。フェリーの時間まで、窓際でのんびり過ごせたのがいい思い出です。</p><footer>40代・旅行中の方（※サンプル）</footer></article>
+      <article class="voice-card"><p>卵トーストと塩プリンを目当てに、週末は家族で来ています。子どもも塩プリンが大好きです。</p><footer>30代・ご家族連れ（※サンプル）</footer></article>
+    </div>
+    <p class="note" style="color:#5b5044">※掲載の声は、制作サンプル用に作成した架空の内容です。</p>
+  </div>
+</section>
+
+<section id="access" class="access">
+  <div class="wrap">
+    <p class="eyebrow">Access</p>
+    <h2>駅から歩いて、海のほうへ。</h2>
+    <div class="access-grid">
+      <svg class="map" viewBox="0 0 640 440" role="img" aria-label="駅から港沿いの店舗までの道順を示した架空の案内図">
+        <rect width="640" height="440" fill="#f3e7d5"/>
+        <path d="M0 300c90-20 180 0 270-14s190-54 370-34v188H0Z" fill="#9dc4ca"/>
+        <g fill="none" stroke="#fcf7ef" stroke-width="16"><path d="M0 110h640"/><path d="M0 220c120 6 280 2 370-24s170-44 270-40"/><path d="M150 0v240"/><path d="M430 0v190"/></g>
+        <g fill="#e2d1b6"><rect x="28" y="20" width="96" height="66"/><rect x="176" y="20" width="110" height="66"/><rect x="310" y="20" width="96" height="66"/><rect x="456" y="20" width="150" height="66"/><rect x="28" y="136" width="96" height="62"/><rect x="176" y="136" width="170" height="60"/></g>
+        <rect x="110" y="84" width="84" height="54" fill="#12263a"/><text x="152" y="117" text-anchor="middle" fill="#fff" font-size="17" font-weight="600">駅</text>
+        <path d="M194 112h236v72" fill="none" stroke="#bb5f30" stroke-width="5" stroke-dasharray="3 11" stroke-linecap="round"/>
+        <path d="M430 184c0 0-24-30-24-50a24 24 0 0 1 48 0c0 20-24 50-24 50Z" fill="#bb5f30" transform="translate(0 16)"/><circle cx="430" cy="150" r="9" fill="#fff"/>
+        <text x="466" y="146" fill="#2a2622" font-size="18" font-family="Georgia,serif">Harbor Bean</text>
+        <text x="300" y="104" text-anchor="middle" fill="#7c3a23" font-size="14">徒歩8分</text>
+        <text x="180" y="376" fill="#2f5c68" font-size="17" letter-spacing="4">港</text>
+        <g transform="translate(320 348)" fill="#12263a"><path d="M0 16h50l-8 12H8Z"/><rect x="15" y="4" width="16" height="12"/></g>
+      </svg>
+      <dl>
+        <dt>住所</dt><dd>長崎県佐世保市港町（架空の住所）</dd>
+        <dt>電車</dt><dd>佐世保駅から徒歩8分（想定）</dd>
+        <dt>営業時間</dt><dd>7:30〜18:00（L.O. 17:30）</dd>
+        <dt>定休日</dt><dd>毎週水曜日</dd>
+        <dt>駐車場</dt><dd>近隣のコインパーキングをご利用ください</dd>
+      </dl>
+    </div>
+    <p class="note">※案内図は架空のイメージです。実在の地理・施設とは対応していません。</p>
+  </div>
+</section>
+
+<section id="instagram" class="insta">
+  <div class="wrap insta-grid">
+    <div>
+      <p class="eyebrow">Instagram</p>
+      <h2>今朝の海と、<br>今日の豆。</h2>
+      <p class="lead">その日の焙煎豆、数量限定のお菓子、窓から見える海の色。来店前に見ると、ちょっと早起きしたくなる投稿を毎朝更新しています。</p>
+      <a class="btn" href="#sample-notice"><svg aria-hidden="true"><use href="#i-camera"/></svg>Instagramをフォローする</a>
+      <span class="handle">@harborbean_sample</span>
+    </div>
+    <div class="tiles" aria-hidden="true">
+      <div class="tile t1"><svg><use href="#s-latte"/></svg></div>
+      <div class="tile t2"><svg><use href="#s-bean"/></svg></div>
+      <div class="tile t3"><svg><use href="#s-sun"/></svg></div>
+      <div class="tile t4"><svg><use href="#s-boat"/></svg></div>
+      <div class="tile t5"><svg><use href="#s-cup"/></svg></div>
+      <div class="tile t6"><svg><use href="#s-waves"/></svg></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap"><b>Harbor Bean</b>このページは制作サンプルです。店名・住所・メニュー・アカウントはすべて架空のものです。</div>
+</footer>
+
+<nav class="mbar" aria-label="スマートフォン用メニュー">
+  <a href="#access"><svg aria-hidden="true"><use href="#i-pin"/></svg>アクセス</a>
+  <a href="#instagram"><svg aria-hidden="true"><use href="#i-camera"/></svg>Instagram</a>
+</nav>
+
+<div id="sample-notice" class="sample-modal" role="dialog" aria-labelledby="sn-title">
+  <div class="sample-box">
+    <h3 id="sn-title">これはサンプルページです</h3>
+    <p>架空の店舗のため、実際のInstagramアカウントはありません。</p>
+    <a class="btn btn-copper" href="#instagram">閉じる</a>
+  </div>
+</div>
+</body>
+</html>

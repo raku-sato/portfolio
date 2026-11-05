@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>産後ケア整体院 まゆりの木 | 初回体験のご予約（架空店舗のサンプルLP）</title>
+<meta name="description" content="産後ケア専門の架空の整体院「まゆりの木」の予約LPサンプルです。赤ちゃんと一緒に通える初回体験をご案内します。">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --beige:#f8f1e7;--beige-2:#efe3d3;--beige-3:#e3d2bc;--pink:#f8e3df;--pink-2:#f0cfca;
+  --rose:#a4505c;--rose-dark:#8a3f4b;--text:#4d3e36;--muted:#75635a;--white:#fffdf9;
+  --round:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",Meiryo,"Noto Sans JP",sans-serif;
+  --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",Meiryo,"Noto Sans JP",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--text);background:var(--beige);line-height:1.95;font-size:16px;overflow-x:hidden}
+svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.wrap{width:min(1040px,100% - 40px);margin-inline:auto}
+.narrow{width:min(760px,100% - 40px);margin-inline:auto}
+section{padding:clamp(64px,9vw,104px) 0}
+h1,h2,h3{font-family:var(--round);font-weight:600}
+h2{font-size:clamp(25px,3.8vw,36px);line-height:1.55;letter-spacing:.03em;text-align:center;text-wrap:balance}
+.bridge,.sec-lead{text-wrap:balance}
+.sec-lead{text-align:center;margin:14px auto 0;color:var(--muted);max-width:36em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 34px;border-radius:999px;background:var(--rose);color:#fff;font-family:var(--round);font-weight:600;font-size:17px;text-decoration:none;box-shadow:0 8px 20px rgba(164,80,92,.25);transition:transform .2s,background .2s}
+.btn:hover{background:var(--rose-dark);transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* First view */
+.fv{background:linear-gradient(160deg,var(--pink) 0%,var(--beige) 58%,var(--beige-2) 100%);position:relative;overflow:hidden}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 24px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--round);font-weight:600;font-size:16px;text-decoration:none;line-height:1.4}
+.brand svg{width:34px;height:34px;flex:none}
+.brand small{display:block;font-size:11px;font-weight:400;color:var(--muted)}
+.tel-mini{font-size:14px;text-decoration:none;color:var(--rose-dark);font-weight:600}
+.fv-inner{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,9fr);gap:24px;align-items:center;padding:clamp(20px,4vw,48px) 0 clamp(48px,7vw,84px)}
+.fv-kicker{display:inline-block;background:var(--white);border-radius:999px;padding:3px 16px;font-size:14px;font-weight:600;color:var(--rose-dark);margin-bottom:18px}
+.fv h1{font-size:clamp(30px,3.9vw,46px);line-height:1.55;letter-spacing:.02em}
+.fv h1 em{font-style:normal;background:linear-gradient(transparent 68%,var(--pink-2) 68%)}
+.fv-lead{margin:18px 0 22px;font-size:clamp(15px,1.6vw,17px)}
+.offer{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin-bottom:16px;font-family:var(--round)}
+.offer b{font-size:15px;font-weight:600}
+.offer strong{font-size:38px;line-height:1.2;color:var(--rose);font-weight:600}
+.offer strong small{font-size:17px}
+.offer span{font-size:13.5px;color:var(--muted)}
+.fv-art{max-width:440px;width:100%;margin-inline:auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;list-style:none;padding:0;font-size:14px}
+.chips li{display:flex;align-items:center;gap:6px}
+.chips svg{width:18px;height:18px;color:var(--rose)}
+
+/* Worries */
+.worry-box{margin-top:34px;background:var(--white);border-radius:28px;padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 32px;list-style:none}
+.worry-box li{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;line-height:1.7}
+.worry-box svg{width:24px;height:24px;margin-top:2px}
+.bridge{margin:32px auto 0;text-align:center;font-family:var(--round);font-size:clamp(18px,2.5vw,22px);line-height:1.7}
+.bridge small{display:block;font-family:var(--sans);font-size:15px;color:var(--muted);margin-top:10px;line-height:1.9}
+
+/* Reasons */
+.reason{background:var(--pink)}
+.reason-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.reason-card{background:var(--white);border-radius:24px;padding:28px 24px;text-align:center}
+.reason-card svg{width:72px;height:72px;margin:0 auto 14px}
+.reason-card h3{font-size:18px;line-height:1.55;margin-bottom:8px}
+.reason-card p{font-size:14.5px;text-align:left;line-height:1.85}
+
+/* Flow */
+.flow{list-style:none;padding:0;margin-top:40px}
+.flow li{position:relative;display:grid;grid-template-columns:54px 1fr;gap:18px;padding-bottom:30px}
+.flow li::before{content:"";position:absolute;left:26px;top:54px;bottom:0;width:2px;background:var(--pink-2)}
+.flow li:last-child{padding-bottom:0}
+.flow li:last-child::before{display:none}
+.flow .no{width:54px;height:54px;border-radius:50%;background:var(--pink-2);display:grid;place-items:center;font-family:var(--round);font-weight:600;font-size:19px;color:var(--rose-dark)}
+.flow h3{font-size:18px;line-height:1.55;padding-top:3px}
+.flow h3 small{font-family:var(--sans);font-weight:400;font-size:13px;color:var(--muted);margin-left:8px}
+.flow p{font-size:15px;margin-top:3px}
+
+/* Price */
+.price{background:var(--beige-2)}
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:38px;align-items:stretch}
+.plan{background:var(--white);border-radius:24px;padding:28px 22px;display:flex;flex-direction:column;text-align:center}
+.plan h3{font-size:18px}
+.plan .time{font-size:13.500px;color:var(--muted)}
+.plan .yen{font-family:var(--round);font-weight:600;font-size:36px;margin:12px 0 2px;line-height:1.25}
+.plan .yen small{font-size:15px}
+.plan .was{font-size:13.500px;color:var(--muted);min-height:1.9em}
+.plan p{font-size:14px;text-align:left;margin-top:10px;line-height:1.8}
+.plan.main{background:var(--rose);color:#fff;position:relative}
+.plan.main .time,.plan.main .was{color:#fbe6e4}
+.plan-flag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pink-2);color:var(--rose-dark);font-size:13px;font-weight:600;border-radius:999px;padding:1px 16px;white-space:nowrap}
+.price-note{font-size:13px;color:var(--muted);margin-top:16px;text-align:center}
+.center{text-align:center;margin-top:32px}
+
+/* FAQ */
+.faq{margin-top:34px}
+.faq details{background:var(--white);border-radius:18px;margin-bottom:10px}
+.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 22px;gap:12px;align-items:center;padding:17px 22px;font-family:var(--round);font-weight:600;line-height:1.65}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary svg{width:22px;height:22px;color:var(--rose);transition:transform .2s}
+.faq details[open] summary svg{transform:rotate(45deg)}
+.faq details p{padding:0 22px 20px;font-size:15px}
+
+/* Reserve */
+.reserve{background:linear-gradient(160deg,var(--pink-2),var(--pink) 60%,var(--beige));text-align:center;position:relative;overflow:hidden}
+.reserve h2{position:relative}
+.reserve-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn-sub{background:var(--white);color:var(--rose-dark);box-shadow:none}
+.btn-sub:hover{background:var(--beige)}
+.shop{max-width:560px;margin:36px auto 0;background:rgba(255,253,249,.74);border-radius:22px;padding:20px 26px;text-align:left;display:grid;grid-template-columns:5em 1fr;gap:3px 10px;font-size:14.5px}
+.shop dt{font-weight:600}
+.shop dd{margin:0}
+
+footer{padding:30px 20px;text-align:center;font-size:12.5px;color:var(--muted);line-height:1.9;background:var(--beige)}
+
+.mbar{display:none}
+.sample-modal{display:none;position:fixed;inset:0;z-index:20;background:rgba(77,62,54,.6);place-items:center;padding:20px}
+.sample-modal:target{display:grid}
+.sample-box{background:var(--white);border-radius:24px;max-width:420px;padding:30px 28px;text-align:center}
+.sample-box h3{font-size:20px;margin-bottom:8px}
+.sample-box p{font-size:14.5px;margin-bottom:18px}
+
+@media (max-width:760px){
+  body{padding-bottom:70px}
+  .tel-mini{display:none}
+  .fv-inner{grid-template-columns:minmax(0,1fr);padding-top:6px}
+  .fv h1{font-size:clamp(24px,7.8vw,31px)}
+  .fv-art{order:-1;max-width:220px;margin-bottom:-4px}
+  .fv-inner .btn{width:100%}
+  .worry-box,.reason-grid,.price-grid{grid-template-columns:minmax(0,1fr)}
+  .plan.main{order:-1;margin-bottom:6px}
+  .reason-card{display:grid;grid-template-columns:64px 1fr;gap:4px 14px;text-align:left}
+  .reason-card svg{width:64px;height:64px;margin:0;grid-row:span 2}
+  .reserve-actions .btn{width:100%}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:10;padding:7px 12px;background:rgba(255,253,249,.96);box-shadow:0 -4px 16px rgba(77,62,54,.12)}
+  .mbar .btn{flex:1;min-height:54px;padding:0 10px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.faq summary svg{transition:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.500" width="16" height="15" rx="3"/><path d="M4 10h16M8.500 3v4M15.500 3v4M9 15l2 2 4-4"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#f0cfca"/><path d="M7 12.500l3.500 3.500L17 9" fill="none" stroke="#8a3f4b" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-dot" viewBox="0 0 24 24"><path d="M12 21C6 16.500 3 13 3 9.200A4.700 4.700 0 0 1 12 7.500a4.700 4.700 0 0 1 9 1.700C21 13 18 16.500 12 21Z" fill="currentColor"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#f0cfca"/><path d="M17 26V13" stroke="#8a3f4b" stroke-width="2" stroke-linecap="round"/><path d="M17 16c-1-5-5-7-9-7 0 5 3 9 9 9ZM17 20c1-5 5-7 9-7 0 5-3 9-9 9Z" fill="#a4505c"/></symbol>
+</svg>
+
+<header class="fv">
+  <div class="topbar">
+    <a class="brand" href="#"><svg><use href="#i-leaf"/></svg><span>まゆりの木<small>産後ケア専門の整体院</small></span></a>
+    <a class="tel-mini" href="#reserve">ご予約はこちら</a>
+  </div>
+  <div class="wrap fv-inner">
+    <div>
+      <span class="fv-kicker">赤ちゃんと一緒に通えます</span>
+      <h1>抱っこの腰、授乳の肩。<br><em>がまんの毎日</em>を、<br>ここでほどきませんか。</h1>
+      <p class="fv-lead">産後のからだと暮らしに合わせた、産後ケア専門の整体院です。ベビーカーのまま入れる個室で、お子さまを見守りながら受けていただけます。</p>
+      <div class="offer"><b>初回体験 60分</b><strong>3,300<small>円（税込）</small></strong><span>通常 6,600円</span></div>
+      <div><a class="btn" href="#reserve"><svg aria-hidden="true"><use href="#i-cal"/></svg>初回体験を予約する</a></div>
+      <ul class="chips">
+        <li><svg aria-hidden="true"><use href="#i-dot"/></svg>完全個室</li>
+        <li><svg aria-hidden="true"><use href="#i-dot"/></svg>女性スタッフ対応</li>
+        <li><svg aria-hidden="true"><use href="#i-dot"/></svg>授乳スペースあり</li>
+      </ul>
+    </div>
+    <svg class="fv-art" viewBox="0 0 440 440" role="img" aria-label="赤ちゃんを抱く人をやわらかな曲線で表したイラスト">
+      <defs>
+        <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9b7b1"/><stop offset="1" stop-color="#d98f90"/></linearGradient>
+        <linearGradient id="halo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffdf9"/><stop offset="1" stop-color="#f4d8d3"/></linearGradient>
+      </defs>
+      <circle cx="220" cy="220" r="210" fill="url(#halo)"/>
+      <circle cx="220" cy="220" r="170" fill="none" stroke="#f0cfca" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+      <clipPath id="halo-clip"><circle cx="220" cy="220" r="210"/></clipPath>
+      <g clip-path="url(#halo-clip)">
+      <path d="M60 460c6-150 60-234 160-234s154 84 160 234Z" fill="url(#body)"/>
+    <circle cx="220" cy="142" r="58" fill="#f6dccb"/>
+    <path d="M160 146c-6-60 34-84 66-82 40 2 66 34 56 84-10-26-34-44-58-46-26-2-50 16-64 44Z" fill="#6e5245"/>
+    <circle cx="222" cy="66" r="20" fill="#6e5245"/>
+    <path d="M106 262C118 344 204 376 306 326" fill="none" stroke="#c97f82" stroke-width="28" stroke-linecap="round"/>
+    <ellipse cx="226" cy="298" rx="78" ry="48" transform="rotate(-14 226 298)" fill="#fffdf9"/>
+    <circle cx="272" cy="266" r="33" fill="#f6dccb"/>
+    <path d="M242 258c6-22 44-30 62-6-16-8-40-8-62 6Z" fill="#6e5245"/>
+      </g>
+      <g style="color:#c97f82"><use href="#i-dot" x="340" y="70" width="26" height="26"/><use href="#i-dot" x="372" y="118" width="15" height="15" opacity=".6"/><use href="#i-dot" x="58" y="120" width="19" height="19" opacity=".6"/></g>
+    </svg>
+  </div>
+</header>
+
+<main>
+<section id="worry">
+  <div class="wrap">
+    <h2>こんなお悩み、<br>「そのうち」で済ませていませんか。</h2>
+    <ul class="worry-box">
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>抱っこを続けると、腰がずっしり重い</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>授乳のあと、肩や首がガチガチになる</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>骨盤まわりがグラグラするように感じる</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>産前の服を着ると、なんとなく違和感がある</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>寝ても疲れが抜けた気がしない</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg>子連れで行ける場所が見つからず、あきらめている</li>
+    </ul>
+    <p class="bridge">ひとつでも当てはまったら、<br>まずは今のからだを一緒に確認しませんか。
+      <small>産後は、抱っこや授乳で同じ姿勢が続きがち。ご自身のことはつい後回しになりますが、気になることを話すだけでも構いません。</small></p>
+  </div>
+</section>
+
+<section class="reason">
+  <div class="wrap">
+    <h2>産後のママのために、整えた場所です</h2>
+    <div class="reason-grid">
+      <article class="reason-card">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="36" fill="#f0cfca"/><path d="M18 34h24a10 10 0 0 1 10 10v2H18Z" fill="#a4505c"/><path d="M42 34V20a11 11 0 0 1 11 11v3Z" fill="#fffdf9"/><circle cx="26" cy="53" r="4.500" fill="#4d3e36"/><circle cx="46" cy="53" r="4.500" fill="#4d3e36"/></svg>
+        <h3>赤ちゃんと一緒にどうぞ</h3>
+        <p>ベビーカーのまま個室へ。ベビーベッドとおむつ替えの場所も用意しています。</p>
+      </article>
+      <article class="reason-card">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="36" fill="#f0cfca"/><path d="M18 22h36a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H32l-9 8v-8h-5a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4Z" fill="#fffdf9"/><path d="M36 42c-7-5-10-8-10-11.500a4.500 4.500 0 0 1 10-1 4.500 4.500 0 0 1 10 1C46 34 43 37 36 42Z" fill="#a4505c"/></svg>
+        <h3>産後の話から始めます</h3>
+        <p>出産の方法や育児の様子をうかがってから、その日のからだに合わせて進めます。</p>
+      </article>
+      <article class="reason-card">
+        <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="36" fill="#f0cfca"/><rect x="18" y="20" width="36" height="34" rx="5" fill="#fffdf9"/><path d="M18 30h36" stroke="#a4505c" stroke-width="3"/><path d="M27 15v9M45 15v9" stroke="#4d3e36" stroke-width="3.500" stroke-linecap="round"/><path d="M28 42l6 6 11-11" fill="none" stroke="#a4505c" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>当日の変更も気軽に</h3>
+        <p>赤ちゃんの体調で来られない日もあります。当日のご連絡でもキャンセル料はいただきません。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="narrow">
+    <h2>初回の流れ</h2>
+    <p class="sec-lead">ご来院からお帰りまで、60分ほどです。</p>
+    <ol class="flow">
+      <li><span class="no">1</span><div><h3>ご予約<small>WEB・電話</small></h3><p>ご希望の日時と、お子さまの月齢をお知らせください。</p></div></li>
+      <li><span class="no">2</span><div><h3>カウンセリング<small>約15分</small></h3><p>出産の方法、気になるところ、普段の抱っこや授乳の様子をうかがいます。</p></div></li>
+      <li><span class="no">3</span><div><h3>姿勢と動きの確認<small>約5分</small></h3><p>立ち方や体の動かしやすさを、ご本人と一緒に確認します。</p></div></li>
+      <li><span class="no">4</span><div><h3>施術<small>約30分</small></h3><p>強く押したり、ボキボキ鳴らしたりはしません。途中で授乳やおむつ替えの時間もとれます。</p></div></li>
+      <li><span class="no">5</span><div><h3>おうちケアのご提案<small>約10分</small></h3><p>家事や抱っこの合間にできる簡単な動きをお伝えします。次回のご予約は無理におすすめしません。</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="price" class="price">
+  <div class="wrap">
+    <h2>料金</h2>
+    <div class="price-grid">
+      <article class="plan">
+        <h3>通常コース</h3><span class="time">60分</span>
+        <div class="yen">6,600<small>円</small></div><span class="was">&nbsp;</span>
+        <p>2回目以降の基本コースです。その日の状態に合わせて施術します。</p>
+      </article>
+      <article class="plan main">
+        <span class="plan-flag">はじめての方へ</span>
+        <h3>初回体験コース</h3><span class="time">60分・カウンセリング込み</span>
+        <div class="yen">3,300<small>円</small></div><span class="was">通常 6,600円</span>
+        <p>お一人様1回限り。おうちケアのご提案まで含みます。</p>
+      </article>
+      <article class="plan">
+        <h3>5回チケット</h3><span class="time">60分×5回</span>
+        <div class="yen">29,700<small>円</small></div><span class="was">1回あたり 5,940円</span>
+        <p>有効期限は6か月。まとめ買いは、ご納得いただいてからで大丈夫です。</p>
+      </article>
+    </div>
+    <p class="price-note">価格はすべて税込です。整体は健康保険の対象外となります。</p>
+    <div class="center"><a class="btn" href="#reserve"><svg aria-hidden="true"><use href="#i-cal"/></svg>初回体験を予約する</a></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="narrow">
+    <h2>よくあるご質問</h2>
+    <div class="faq">
+      <details open><summary>産後いつから通えますか？<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>産後1か月健診で、医師から普段の生活に戻ってよいと言われてからをおすすめしています。ご不安な場合は、かかりつけの医師にご確認ください。</p></details>
+      <details><summary>帝王切開でも受けられますか？<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>主治医の許可があれば受けていただけます。傷の状態をうかがったうえで、負担の少ない姿勢で進めます。</p></details>
+      <details><summary>赤ちゃんが泣いてしまっても大丈夫ですか？<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>もちろんです。施術はいつでも止められます。授乳やおむつ替え、抱っこの時間をとりながら進めますので、安心してお越しください。</p></details>
+      <details><summary>施術は痛くありませんか？<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>強い力はかけず、やさしい手技が中心です。強さはその都度確認し、途中でも調整します。</p></details>
+      <details><summary>どれくらいの頻度で通えばいいですか？<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>お悩みや生活リズムによって異なります。初回にご相談のうえ、無理のないペースを一緒に考えます。</p></details>
+      <details><summary>持ち物や服装は決まっていますか？<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><p>動きやすい服装でお越しください。お着替えもご用意しています。母子健康手帳をお持ちいただく必要はありません。</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="reserve" class="reserve">
+  <div class="wrap">
+    <h2>まずは一度、ご自身のための60分を。</h2>
+    <p class="sec-lead">初回体験 3,300円（税込）。ご予約は24時間WEBから受け付けています。</p>
+    <div class="reserve-actions">
+      <a class="btn" href="#sample-notice"><svg aria-hidden="true"><use href="#i-cal"/></svg>WEBで予約する</a>
+      <a class="btn btn-sub" href="#sample-notice">電話で相談する</a>
+    </div>
+    <dl class="shop">
+      <dt>院名</dt><dd>産後ケア整体院 まゆりの木（架空）</dd>
+      <dt>場所</dt><dd>架空の町 駅から徒歩5分・1階（段差なし）</dd>
+      <dt>営業時間</dt><dd>9:30〜17:00（最終受付 16:00）</dd>
+      <dt>定休日</dt><dd>日曜・祝日</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  整体は医療行為ではなく、感じ方には個人差があります。強い痛み、出血、発熱などがある場合は、医療機関にご相談ください。<br>
+  このページは制作サンプルです。院名・料金・所在地はすべて架空のものです。
+</footer>
+
+<div class="mbar"><a class="btn" href="#reserve"><svg aria-hidden="true"><use href="#i-cal"/></svg>初回体験 3,300円で予約</a></div>
+
+<div id="sample-notice" class="sample-modal" role="dialog" aria-labelledby="sn-title">
+  <div class="sample-box">
+    <h3 id="sn-title">これはサンプルページです</h3>
+    <p>架空の整体院のため、実際のご予約は受け付けていません。</p>
+    <a class="btn" href="#reserve">閉じる</a>
+  </div>
+</div>
+</body>
+</html>
