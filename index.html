@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LP・広告バナー制作 作品集</title>
+<meta name="description" content="架空の店舗を題材に制作した、LPと広告バナーのサンプル集です。">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --paper:#f7f5f0;--white:#fff;--ink:#1d1f22;--muted:#62666b;--line:#d9d6ce;--accent:#c4472f;
+  --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic",Meiryo,"Noto Sans JP",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.85;font-size:16px;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(36px,5vw,56px);border-bottom:1px solid var(--ink)}
+.hero p.kicker{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.06em}
+.hero h1{font-size:clamp(34px,6.4vw,72px);line-height:1.25;font-weight:800;letter-spacing:-.01em;margin:8px 0 20px}
+.hero .lead{max-width:40em;color:#3c3f43}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:22px;padding:0;list-style:none;font-size:14px;color:var(--muted)}
+.facts li{display:flex;align-items:center;gap:7px}
+.facts svg{width:17px;height:17px;color:var(--accent)}
+
+h2.sec{display:flex;align-items:baseline;gap:14px;font-size:clamp(23px,3vw,30px);font-weight:800;padding:clamp(48px,7vw,80px) 0 6px}
+h2.sec small{font-size:14px;font-weight:400;color:var(--muted)}
+
+.work{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,44px) 0;border-top:1px solid var(--line)}
+h2.sec+.work{border-top:0}
+.work h3{font-size:clamp(20px,2.3vw,25px);font-weight:800;line-height:1.5}
+.work .type{font-size:13px;font-weight:700;color:var(--accent);display:block;margin-bottom:2px}
+.notes{margin-top:14px;font-size:14.5px;line-height:1.75}
+.notes dt{font-weight:700;float:left;clear:left;width:5.5em}
+.notes dd{margin:0 0 8px 5.5em;color:#3c3f43}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border:1.5px solid var(--ink);font-size:14.5px;font-weight:700;text-decoration:none;transition:background .15s,color .15s}
+.link svg{width:15px;height:15px}
+.link:hover{background:var(--ink);color:#fff}
+.link.quiet{border-color:var(--line);font-weight:400}
+.link.quiet:hover{background:var(--line);color:var(--ink)}
+
+/* LP: PCとスマホを重ねて見せる */
+.stage{position:relative;display:block;padding:0 7% 7% 0;text-decoration:none}
+.pc{border:1px solid var(--line);background:var(--white);box-shadow:0 12px 34px rgba(29,31,34,.12)}
+.pc::before{content:"";display:block;height:20px;background:
+  radial-gradient(circle at 12px 10px,#d0ccc3 3.500px,transparent 4px),
+  radial-gradient(circle at 26px 10px,#d0ccc3 3.500px,transparent 4px),
+  radial-gradient(circle at 40px 10px,#d0ccc3 3.500px,transparent 4px),#f0eee9}
+.sp{position:absolute;right:0;bottom:0;width:22%;border:4px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--ink);box-shadow:0 14px 30px rgba(29,31,34,.3)}
+.stage:hover .pc{box-shadow:0 16px 42px rgba(29,31,34,.2)}
+
+.banner-img{border:1px solid var(--line);box-shadow:0 10px 28px rgba(29,31,34,.1);background:var(--white)}
+.banner-link{display:block}
+.banner-square{max-width:440px;margin-inline:auto}
+.size{display:inline-block;font-size:13px;font-weight:400;color:var(--muted);margin-left:8px}
+
+footer{margin-top:clamp(48px,7vw,80px);background:var(--ink);color:#d7d8da;padding:clamp(32px,5vw,48px) 0;font-size:14px}
+footer h2{color:#fff;font-size:19px;margin-bottom:8px}
+
+@media (max-width:760px){
+  .work{grid-template-columns:minmax(0,1fr)}
+  .notes dt{float:none;width:auto}
+  .notes dd{margin:0 0 8px}
+  .link{flex:1 1 150px;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.link{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-open" viewBox="0 0 16 16"><path d="M5 2.500h8.500V11M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 18 18"><path d="M3 9.500 7 13.500 15 5" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">PORTFOLIO</p>
+    <h1>LP・広告バナー<br>制作サンプル</h1>
+    <p class="lead">架空の店舗を題材に、「誰に、何をしてもらうページか」から組み立てたサンプルです。LP2本とバナー3種を掲載しています。</p>
+    <ul class="facts">
+      <li><svg aria-hidden="true"><use href="#i-tick"/></svg>LPはHTML/CSSのみの1ファイル完結</li>
+      <li><svg aria-hidden="true"><use href="#i-tick"/></svg>スマホ対応</li>
+      <li><svg aria-hidden="true"><use href="#i-tick"/></svg>写真なし。図形とSVGで制作</li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2 class="sec">LP <small>2本</small></h2>
+
+  <article class="work">
+    <a class="stage" href="lp/harbor-bean.html" aria-label="Harbor BeanのLPを開く">
+      <div class="pc"><img src="assets/thumbs/harbor-bean-pc.jpg" width="1280" height="800" alt="Harbor BeanのLP、パソコン表示のファーストビュー" loading="lazy"></div>
+      <div class="sp"><img src="assets/thumbs/harbor-bean-sp.jpg" width="780" height="1688" alt="" loading="lazy"></div>
+    </a>
+    <div>
+      <span class="type">カフェの集客LP</span>
+      <h3>Harbor Bean（佐世保）</h3>
+      <dl class="notes">
+        <dt>制作意図</dt><dd>「港町の朝」という来店理由をつくり、メニュー確認から来店とInstagramフォローへつなげました。</dd>
+        <dt>ターゲット</dt><dd>佐世保の朝活層と、観光で立ち寄るカフェ好きの20〜40代。</dd>
+        <dt>工夫した点</dt><dd>夕焼けの海と縦書きの見出しで世界観を伝え、スマホではアクセスとInstagramを下部に固定しました。</dd>
+      </dl>
+      <div class="links"><a class="link" href="lp/harbor-bean.html">LPを見る<svg aria-hidden="true"><use href="#i-open"/></svg></a></div>
+    </div>
+  </article>
+
+  <article class="work">
+    <a class="stage" href="lp/sango-seitai.html" aria-label="まゆりの木のLPを開く">
+      <div class="pc"><img src="assets/thumbs/sango-seitai-pc.jpg" width="1280" height="800" alt="まゆりの木のLP、パソコン表示のファーストビュー" loading="lazy"></div>
+      <div class="sp"><img src="assets/thumbs/sango-seitai-sp.jpg" width="780" height="1688" alt="" loading="lazy"></div>
+    </a>
+    <div>
+      <span class="type">整体院の予約LP</span>
+      <h3>産後ケア整体院 まゆりの木</h3>
+      <dl class="notes">
+        <dt>制作意図</dt><dd>「子連れで行けるか」「産後いつからか」という不安を先に解消し、初回体験の予約へ導きました。</dd>
+        <dt>ターゲット</dt><dd>産後の腰や肩の不調を、育児を理由に後回しにしている方。</dd>
+        <dt>工夫した点</dt><dd>優しいベージュとピンクの中で予約ボタンだけ濃くし、効果を断定しない表現と受診の案内を入れました。</dd>
+      </dl>
+      <div class="links"><a class="link" href="lp/sango-seitai.html">LPを見る<svg aria-hidden="true"><use href="#i-open"/></svg></a></div>
+    </div>
+  </article>
+
+  <h2 class="sec">広告バナー <small>3種</small></h2>
+
+  <article class="work">
+    <a class="banner-link" href="banners/burger-new.png"><img class="banner-img" src="banners/burger-new.png" width="1200" height="628" alt="炙りチーズ三段バーガーの新発売を告知するバナー" loading="lazy"></a>
+    <div>
+      <span class="type">新作告知</span>
+      <h3>EMBER STACK<span class="size">1200×628</span></h3>
+      <dl class="notes">
+        <dt>制作意図</dt><dd>タイムラインで流し見されても、商品名と発売日が一瞬で伝わる告知にしました。</dd>
+        <dt>ターゲット</dt><dd>がっつり系が好きな、20〜30代のハンバーガー好き。</dd>
+        <dt>工夫した点</dt><dd>黒地に炭火の赤を重ねてシズル感を出し、情報は商品名・発売日・価格の三つに絞りました。</dd>
+      </dl>
+      <div class="links"><a class="link" href="banners/burger-new.png">PNGを見る<svg aria-hidden="true"><use href="#i-open"/></svg></a></div>
+    </div>
+  </article>
+
+  <article class="work">
+    <a class="banner-link banner-square" href="banners/seitai-trial.png"><img class="banner-img" src="banners/seitai-trial.png" width="1080" height="1080" alt="産後ケア整体の初回体験3,300円を案内するバナー" loading="lazy"></a>
+    <div>
+      <span class="type">初回体験キャンペーン</span>
+      <h3>まゆりの木<span class="size">1080×1080</span></h3>
+      <dl class="notes">
+        <dt>制作意図</dt><dd>SNSフィード向けに、悩みから価格まで上から順に読める正方形にしました。</dd>
+        <dt>ターゲット</dt><dd>授乳の合間にスマホを見ている、産後の方。</dd>
+        <dt>工夫した点</dt><dd>優しい配色のまま価格を最大に見せ、「赤ちゃん同伴OK」で子連れの不安に先回りしました。</dd>
+      </dl>
+      <div class="links"><a class="link" href="banners/seitai-trial.png">PNGを見る<svg aria-hidden="true"><use href="#i-open"/></svg></a></div>
+    </div>
+  </article>
+
+  <article class="work">
+    <a class="banner-link" href="banners/cafe-limited.png"><img class="banner-img" src="banners/cafe-limited.png" width="1200" height="628" alt="潮風の塩キャラメルラテの期間限定販売を告知するバナー" loading="lazy"></a>
+    <div>
+      <span class="type">期間限定メニュー</span>
+      <h3>Harbor Bean<span class="size">1200×628</span></h3>
+      <dl class="notes">
+        <dt>制作意図</dt><dd>LPと同じ港の世界観を保ちながら、「今だけ」の来店理由をつくりました。</dd>
+        <dt>ターゲット</dt><dd>季節限定メニューが好きな、地元のカフェ利用者。</dd>
+        <dt>工夫した点</dt><dd>冬の夕暮れを背景にグラスを大きく置き、明朝体で商品名を引き立てて価格で締めました。</dd>
+      </dl>
+      <div class="links"><a class="link" href="banners/cafe-limited.png">PNGを見る<svg aria-hidden="true"><use href="#i-open"/></svg></a></div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>掲載作品について</h2>
+    <p>すべて制作サンプルであり、店舗名・価格・お客様の声などは架空のものです。実在の店舗・団体とは関係ありません。</p>
+  </div>
+</footer>
+</body>
+</html>
